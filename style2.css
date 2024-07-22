@@ -5,7 +5,7 @@ html {
 
 header {
   background: linear-gradient(45deg, #8A2BE2, #FF5733, #FFC300);
-  
+
   z-index: 1;
 }
 
@@ -29,7 +29,7 @@ body {
   overflow: visible;
   transition: background-color 0.3s ease;
   gap: 2rem;
-  
+
 }
 
 .navbar.scrolled {
@@ -43,6 +43,7 @@ body {
   text-decoration: none;
   color: #000000;
 }
+
 .faq2 {
   margin-top: 1.4rem;
 }
@@ -59,12 +60,16 @@ body {
   position: absolute;
   background-color: #f9f9f9;
   min-width: 100px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1000; /* Certifique-se de que o dropdown esteja acima de outros elementos */
-  top: 100%; /* Posiciona o dropdown exatamente abaixo do link */
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+  /* Certifique-se de que o dropdown esteja acima de outros elementos */
+  top: 100%;
+  /* Posiciona o dropdown exatamente abaixo do link */
   left: -5%;
-  margin-top: 0px; /* Garante que não haja margem superior */
-  border-top: none; /* Remove qualquer borda superior */
+  margin-top: 0px;
+  /* Garante que não haja margem superior */
+  border-top: none;
+  /* Remove qualquer borda superior */
 }
 
 /* Links do dropdown */
@@ -95,15 +100,20 @@ body {
 /* Conteúdo do submenu */
 .dropdown-content-submenu {
   display: none;
-  position: absolute; /* Garante que o submenu esteja posicionado em relação ao item pai */
+  position: absolute;
+  /* Garante que o submenu esteja posicionado em relação ao item pai */
   background-color: #f9f9f9;
-  width: 160px; /* Define uma largura fixa para o submenu */
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  width: 160px;
+  /* Define uma largura fixa para o submenu */
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1000;
   top: 0;
-  left: 10.5rem; /* Garante que o submenu fique à direita do item pai */
-  margin-left: 0; /* Remove qualquer margem lateral */
-  margin-top: 0; /* Remove qualquer margem superior */
+  left: 10.5rem;
+  /* Garante que o submenu fique à direita do item pai */
+  margin-left: 0;
+  /* Remove qualquer margem lateral */
+  margin-top: 0;
+  /* Remove qualquer margem superior */
 }
 
 /* Exibir submenu ao passar o mouse */
@@ -143,9 +153,11 @@ body {
 
   .dropdown-content-submenu {
     min-width: 120px;
-    left: 12rem; /* Ajusta o submenu para ficar alinhado abaixo do item pai em telas menores */
+    left: 12rem;
+    /* Ajusta o submenu para ficar alinhado abaixo do item pai em telas menores */
   }
 }
+
 #content {
   margin-top: 10%;
 }
@@ -183,8 +195,10 @@ body {
 
 .socialBack2 {
   padding-top: 10rem;
-  background: linear-gradient(to bottom,  #ffffff, #ffffff, rgba(255, 255, 255, 0) 5%), /* Gradiente branco no topo */
-  linear-gradient(45deg, #8A2BE2, #FF5733, #FFC300); /* Gradiente de 45 graus */
+  background: linear-gradient(to bottom, #ffffff, #ffffff, rgba(255, 255, 255, 0) 5%),
+    /* Gradiente branco no topo */
+    linear-gradient(45deg, #8A2BE2, #FF5733, #FFC300);
+  /* Gradiente de 45 graus */
 }
 
 
@@ -252,40 +266,40 @@ body {
 /* Estilos responsivos */
 @media (max-width: 1200px) {
   .coluna {
-      width: 70%;
+    width: 70%;
   }
 }
 
 @media (max-width: 768px) {
   .linhaContainer {
-      flex-direction: column;
-      align-items: center;
+    flex-direction: column;
+    align-items: center;
   }
 
   .coluna {
-      width: 90%;
+    width: 90%;
   }
 
   .titulo1 {
-      font-size: 30px;
+    font-size: 30px;
   }
 
   .numero {
-      font-size: 80px;
+    font-size: 80px;
   }
 }
 
 @media (max-width: 480px) {
   .coluna {
-      width: 100%;
+    width: 100%;
   }
 
   .titulo1 {
-      font-size: 25px;
+    font-size: 25px;
   }
 
   .numero {
-      font-size: 60px;
+    font-size: 60px;
   }
 }
 
@@ -327,12 +341,14 @@ body {
 }
 
 .imagensFooter img {
-  margin-bottom: 1rem; /* Espaçamento entre imagem e texto */
+  margin-bottom: 1rem;
+  /* Espaçamento entre imagem e texto */
 }
 
 .contatos {
   color: #000000;
-  margin-bottom: 1rem; /* Espaçamento entre textos */
+  margin-bottom: 1rem;
+  /* Espaçamento entre textos */
 }
 
 .line {
@@ -363,8 +379,10 @@ body {
     padding-left: 2rem;
     padding-top: 10rem;
     align-items: center;
-    flex-direction: column; /* Para coluna em telas menores */
-    gap: 2rem; /* Espaçamento entre contêineres */
+    flex-direction: column;
+    /* Para coluna em telas menores */
+    gap: 2rem;
+    /* Espaçamento entre contêineres */
   }
 
   .linksRapidosContainer {
@@ -375,9 +393,12 @@ body {
     margin-right: 0;
     align-self: center;
     flex-direction: column;
-    align-items: center; /* Centraliza as imagens */
-    margin-top: 0; /* Remove margem negativa */
-    gap: 1rem; /* Espaçamento entre contêineres */
+    align-items: center;
+    /* Centraliza as imagens */
+    margin-top: 0;
+    /* Remove margem negativa */
+    gap: 1rem;
+    /* Espaçamento entre contêineres */
   }
 
   .LinksRapidos {
@@ -388,12 +409,15 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    text-align: center; /* Centraliza texto e imagem */
-    margin-bottom: 2rem; /* Espaçamento entre contêineres */
+    text-align: center;
+    /* Centraliza texto e imagem */
+    margin-bottom: 2rem;
+    /* Espaçamento entre contêineres */
   }
 
   .imagem-container img {
-    margin-bottom: 1rem; /* Espaçamento entre imagem e texto */
+    margin-bottom: 1rem;
+    /* Espaçamento entre imagem e texto */
   }
 }
 
@@ -403,8 +427,10 @@ body {
     padding-left: 2rem;
     padding-top: 5rem;
     align-items: center;
-    flex-direction: column; /* Para coluna em telas menores */
-    gap: 2rem; /* Espaçamento entre contêineres */
+    flex-direction: column;
+    /* Para coluna em telas menores */
+    gap: 2rem;
+    /* Espaçamento entre contêineres */
   }
 
   .linksRapidosContainer {
@@ -415,9 +441,12 @@ body {
     margin-right: 0;
     align-self: center;
     flex-direction: column;
-    align-items: center; /* Centraliza as imagens */
-    margin-top: 0; /* Remove margem negativa */
-    gap: 1rem; /* Espaçamento entre contêineres */
+    align-items: center;
+    /* Centraliza as imagens */
+    margin-top: 0;
+    /* Remove margem negativa */
+    gap: 1rem;
+    /* Espaçamento entre contêineres */
   }
 
   .LinksRapidos {
@@ -433,18 +462,21 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    text-align: center; /* Centraliza texto e imagem */
-    margin-bottom: 2rem; /* Espaçamento entre contêineres */
+    text-align: center;
+    /* Centraliza texto e imagem */
+    margin-bottom: 2rem;
+    /* Espaçamento entre contêineres */
   }
 
   .imagem-container img {
-    margin-bottom: 1rem; /* Espaçamento entre imagem e texto */
+    margin-bottom: 1rem;
+    /* Espaçamento entre imagem e texto */
   }
 }
 
 * {
   box-sizing: border-box;
-     
+
 }
 
 html,
@@ -459,6 +491,7 @@ body {
   justify-content: center;
   font-size: 30px;
 }
+
 .faq-container {
   color: black;
   max-width: 800px;
@@ -477,7 +510,8 @@ body {
 .faq-question h3 {
   font-weight: bold;
   margin-top: 0;
-  cursor: pointer; /* Adicionei um cursor de ponteiro para indicar que o título é clicável */
+  cursor: pointer;
+  /* Adicionei um cursor de ponteiro para indicar que o título é clicável */
 }
 
 .faq-question h3 span.faq-toggle {
@@ -490,13 +524,69 @@ body {
   padding: 10px;
   background-color: #fff;
   border: 1px solid #ddd;
-  display: none; /* Esconde a resposta por padrão */
+  display: none;
+  /* Esconde a resposta por padrão */
 }
 
 .faq-question.active.faq-answer {
-  display: block; /* Mostra a resposta quando o título é clicado */
+  display: block;
+  /* Mostra a resposta quando o título é clicado */
 }
 
 .faq-question.active h3 span.faq-toggle {
-  content: "-"; /* Altera o símbolo de "+" para "-" quando a resposta é mostrada */
+  content: "-";
+  /* Altera o símbolo de "+" para "-" quando a resposta é mostrada */
+}
+
+.terms-and-conditions {
+  max-width: 1300px;
+  align-items: center;
+  color: #000000;
+  margin: 5rem auto;
+  padding: 2rem;
+  background-color: #f5f5f5;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.terms-and-conditions h1 {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.terms-and-conditions p {
+  margin-bottom: 1rem;
+
+}
+
+.terms-and-conditions ol {
+  padding-left: 2rem;
+
+}
+
+.terms-and-conditions li {
+  margin-bottom: 0.5rem;
+
+}
+
+.terms-and-conditions .policy {
+  margin-top: 3rem;
+
+}
+
+.terms-and-conditions .policy h1 {
+  margin-top: 2rem;
+
+}
+
+.terms-and-conditions .policy p {
+  margin-bottom: 1rem;
+
+}
+.perguntasFrequentes {
+  font-size: 45px;
+  font-weight: bold;
+}
+li {
+  align-items: center;
 }
