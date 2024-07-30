@@ -1,0 +1,697 @@
+/* Google Fonts - Poppins */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  min-height: 100vh;
+
+  background-color: #ffffff;
+}
+
+
+.description {
+  font-size: 15px;
+  font-weight: bold;
+  color: black;
+  margin-bottom: 20px;
+}
+
+.slide-container {
+  max-width: 1300px;
+  width: 100%;
+  padding: 40px 0;
+}
+
+.slide-content {
+  margin: 0 40px;
+  overflow: hidden;
+
+}
+
+.card {
+  border-radius: 0px;
+  background: #3333330a;
+}
+
+.image-content,
+.card-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px 14px;
+
+
+}
+
+.image-content {
+  position: relative;
+  row-gap: 5px;
+  padding: 25px 0;
+}
+
+.overlay {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(45deg, #8A2BE2, #FF5733, #FFC300);
+}
+
+.overlay::before,
+.overlay::after {
+  position: absolute;
+  right: 0;
+  bottom: -40px;
+  height: 40px;
+  width: 40px;
+
+}
+
+.overlay::after {
+  border-radius: 0 25px 0 0;
+  background-color: #FFF;
+
+}
+
+.card-image {
+  position: relative;
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  background: #FFF;
+  padding: 3px;
+}
+
+.card-image .card-img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 4px solid #FF5733;
+}
+
+
+.name {
+  font-size: 18px;
+  font-weight: 500;
+  color: #333;
+}
+
+.button {
+  border: none;
+  font-size: 16px;
+  color: #FFF;
+  padding: 8px 16px;
+  background: linear-gradient(45deg, #8A2BE2, #FF5733, #FFC300);
+  border-radius: 6px;
+  margin: 14px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.button:hover {
+  background: linear-gradient(45deg, #FFC300, #FF5733, #8A2BE2);
+}
+
+.swiper-navBtn {
+  color: #6E93f7;
+  transition: color 0.3s ease;
+}
+
+.swiper-navBtn:hover {
+  color: #4070F4;
+}
+
+.swiper-navBtn::before,
+.swiper-navBtn::after {
+  font-size: 50px;
+  padding-top: 20rem;
+}
+
+.swiper-button-next {
+  right: 300px;
+}
+
+.swiper-button-prev {
+  left: 300px;
+}
+
+.swiper-pagination {
+  margin-bottom: -3%;
+  align-self: center;
+}
+
+.swiper-pagination-bullet {
+  background-color: #6E93f7;
+  opacity: 1;
+
+}
+
+.swiper-pagination-bullet-active {
+  background-color: #4070F4;
+
+}
+
+@media screen and (max-width: 768px) {
+  .slide-content {
+    margin: 0 10px;
+  }
+
+  .swiper-navBtn {
+    display: none;
+  }
+}
+
+.card-content {
+  padding: 20px;
+}
+
+.name {
+  font-size: 40px;
+  color: #333;
+}
+
+.price {
+  font-size: 40px;
+  background-image: linear-gradient(45deg, #8A2BE2, #FF5733, #FFC300);
+  color: #fff;
+  padding: 1rem;
+  border-radius: 0px;
+  margin-bottom: 20px;
+  width: 389px;
+  /* Defina a largura fixa desejada */
+  box-sizing: border-box;
+  /* Garante que o padding esteja incluído na largura total */
+  display: flex;
+  /* Use flexbox para centralizar o texto */
+  justify-content: center;
+  /* Centraliza horizontalmente */
+  align-items: center;
+  /* Centraliza verticalmente */
+  text-align: center;
+  /* Garante que o texto esteja centralizado */
+}
+
+
+.seguidoresMundiais {
+  color: black;
+  font-size: 16px;
+}
+
+@media screen and (max-width: 1500px) {
+  .slide-content {
+    margin: 0 20px;
+  }
+
+  .swiper-button-next {
+    right: 50px;
+    padding-top: 25rem;
+  }
+
+  .swiper-button-prev {
+    left: 50px;
+    padding-top: 25rem;
+  }
+
+  .price {
+    width: auto;
+    /* Ajusta a largura para ser responsiva */
+  }
+
+  .swiper-pagination {
+    margin-bottom: -40rem;
+    /* Ajuste para telas menores */
+  }
+
+}
+
+@media screen and (max-width: 768px) {
+  .slide-content {
+    margin: 0 10px;
+  }
+
+  .price {
+    font-size: 30px;
+    width: auto;
+    /* Ajusta a largura para ser responsiva */
+  }
+
+  .swiper-pagination {
+    margin-bottom: -2rem;
+    /* Ajuste para telas menores */
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .description {
+    font-size: 12px;
+  }
+
+  .name {
+    font-size: 16px;
+  }
+
+  .button {
+    font-size: 14px;
+    padding: 6px 12px;
+  }
+
+  .price {
+    font-size: 20px;
+    padding: 0.5rem;
+    width: 37rem;
+    /* Ajusta a largura para ser responsiva */
+  }
+
+  .card-image {
+    height: 100px;
+    width: 100px;
+  }
+
+  .swiper-pagination {
+    margin-bottom: -16rem;
+    /* Ajuste para telas menores */
+    align-self: center;
+  }
+}
+
+
+.card-image-facebook {
+  position: relative;
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  background: #FFF;
+  padding: 3px;
+}
+
+.card-image-facebook .card-img-facebook {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 4px solid #3b5998;
+
+}
+
+.price-facebook {
+  font-size: 40px;
+  background: #3b5998;
+  color: #fff;
+  padding: 1rem;
+  border-radius: 0px;
+  margin-bottom: 20px;
+  width: 389px;
+  /* Defina a largura fixa desejada */
+  box-sizing: border-box;
+  /* Garante que o padding esteja incluído na largura total */
+  display: flex;
+  /* Use flexbox para centralizar o texto */
+  justify-content: center;
+  /* Centraliza horizontalmente */
+  align-items: center;
+  /* Centraliza verticalmente */
+  text-align: center;
+  /* Garante que o texto esteja centralizado */
+
+}
+
+.overlay-facebook {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background: #3b5998;
+
+}
+
+.button-facebook {
+  border: none;
+  font-size: 16px;
+  color: #FFF;
+  padding: 8px 16px;
+  background: #3b5998;
+  border-radius: 6px;
+  margin: 14px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.button-facebook:hover {
+  background: #1051dd;
+}
+
+
+
+
+.card-image-tiktok {
+  position: relative;
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  background: #FFF;
+  padding: 3px;
+}
+
+.card-image-tiktok .card-img-tiktok {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 4px solid #2d0f1e;
+
+}
+
+.price-tiktok {
+  font-size: 40px;
+  background: #2d0f1e;
+  color: #fff;
+  padding: 1rem;
+  border-radius: 0px;
+  margin-bottom: 20px;
+  width: 389px;
+  /* Defina a largura fixa desejada */
+  box-sizing: border-box;
+  /* Garante que o padding esteja incluído na largura total */
+  display: flex;
+  /* Use flexbox para centralizar o texto */
+  justify-content: center;
+  /* Centraliza horizontalmente */
+  align-items: center;
+  /* Centraliza verticalmente */
+  text-align: center;
+  /* Garante que o texto esteja centralizado */
+
+}
+
+.overlay-tiktok {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background: #2d0f1e;
+
+}
+
+.button-tiktok {
+  border: none;
+  font-size: 16px;
+  color: #FFF;
+  padding: 8px 16px;
+  background: #2d0f1e;
+  border-radius: 6px;
+  margin: 14px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.button-tiktok:hover {
+  background: #501532;
+}
+
+
+
+
+
+
+.card-image-youtube {
+  position: relative;
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  background: #FFF;
+  padding: 3px;
+}
+
+.card-image-youtube .card-img-youtube {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 4px solid #f54336;
+
+}
+
+.price-youtube {
+  font-size: 40px;
+  background: #f54336;
+  color: #fff;
+  padding: 1rem;
+  border-radius: 0px;
+  margin-bottom: 20px;
+  width: 389px;
+  /* Defina a largura fixa desejada */
+  box-sizing: border-box;
+  /* Garante que o padding esteja incluído na largura total */
+  display: flex;
+  /* Use flexbox para centralizar o texto */
+  justify-content: center;
+  /* Centraliza horizontalmente */
+  align-items: center;
+  /* Centraliza verticalmente */
+  text-align: center;
+  /* Garante que o texto esteja centralizado */
+
+}
+
+.overlay-youtube {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background: #f54336;
+
+}
+
+.button-youtube {
+  border: none;
+  font-size: 16px;
+  color: #FFF;
+  padding: 8px 16px;
+  background: #f54336;
+  border-radius: 6px;
+  margin: 14px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.button-youtube:hover {
+  background: #bb0000;
+}
+
+
+
+.card-image-twitter {
+  position: relative;
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  background: #FFF;
+  padding: 3px;
+
+}
+
+.card-img-twitter {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 4px solid #55acee;
+
+}
+
+
+
+.price-twitter {
+  font-size: 40px;
+  background: #55acee;
+  color: #fff;
+  padding: 1rem;
+  border-radius: 0px;
+  margin-bottom: 20px;
+  width: 389px;
+  /* Defina a largura fixa desejada */
+  box-sizing: border-box;
+  /* Garante que o padding esteja incluído na largura total */
+  display: flex;
+  /* Use flexbox para centralizar o texto */
+  justify-content: center;
+  /* Centraliza horizontalmente */
+  align-items: center;
+  /* Centraliza verticalmente */
+  text-align: center;
+  /* Garante que o texto esteja centralizado */
+
+}
+
+.overlay-twitter {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background: #55acee;
+
+}
+
+.button-twitter {
+  border: none;
+  font-size: 16px;
+  color: #FFF;
+  padding: 8px 16px;
+  background: #55acee;
+  border-radius: 6px;
+  margin: 14px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.button-twitter:hover {
+  background: #1051dd;
+}
+
+.card-image-telegram {
+  position: relative;
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  background: #FFF;
+  padding: 3px;
+}
+
+.card-image-telegram .card-img-telegram {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 4px solid #30a3e7;
+
+}
+
+.price-telegram {
+  font-size: 40px;
+  background: #30a3e7;
+  color: #fff;
+  padding: 1rem;
+  border-radius: 0px;
+  margin-bottom: 20px;
+  width: 389px;
+  /* Defina a largura fixa desejada */
+  box-sizing: border-box;
+  /* Garante que o padding esteja incluído na largura total */
+  display: flex;
+  /* Use flexbox para centralizar o texto */
+  justify-content: center;
+  /* Centraliza horizontalmente */
+  align-items: center;
+  /* Centraliza verticalmente */
+  text-align: center;
+  /* Garante que o texto esteja centralizado */
+
+}
+
+.overlay-telegram {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background: #30a3e7;
+
+}
+
+.button-telegram {
+  border: none;
+  font-size: 16px;
+  color: #FFF;
+  padding: 8px 16px;
+  background: #30a3e7;
+  border-radius: 6px;
+  margin: 14px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.button-telegram:hover {
+  background: #1051dd;
+}
+
+
+
+
+.card-image-kwai {
+  position: relative;
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  background: #FFF;
+  padding: 3px;
+}
+
+.card-image-kwai .card-img-kwai {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 4px solid #ff7807;
+
+}
+
+.price-kwai {
+  font-size: 40px;
+  background: #ff7807;
+  color: #fff;
+  padding: 1rem;
+  border-radius: 0px;
+  margin-bottom: 20px;
+  width: 389px;
+  /* Defina a largura fixa desejada */
+  box-sizing: border-box;
+  /* Garante que o padding esteja incluído na largura total */
+  display: flex;
+  /* Use flexbox para centralizar o texto */
+  justify-content: center;
+  /* Centraliza horizontalmente */
+  align-items: center;
+  /* Centraliza verticalmente */
+  text-align: center;
+  /* Garante que o texto esteja centralizado */
+
+}
+
+.overlay-kwai {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background: #ff7807;
+
+}
+
+.button-kwai {
+  border: none;
+  font-size: 16px;
+  color: #FFF;
+  padding: 8px 16px;
+  background: #ff7807;
+  border-radius: 6px;
+  margin: 14px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.button-kwai:hover {
+  background: #ff7807;
+  color: black;
+}
